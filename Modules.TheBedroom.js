@@ -19,10 +19,19 @@ async function transitionSection(oldSection, newSection) {
 async function btnPlayButton_onClick() {
    await transitionSection("vwPlayButton", "vwDanger");
 
+   document.getElementById("btnAlertButton").addEventListener("mouseover",() => {
+        document.getElementById("audioThud").play();
+   });
+
    document.getElementById("audioScaryAlert").play();
+   await new Promise(r => setTimeout(r, 1000));
+
+   document.getElementById("audioAlarm").play(); 
+   document.getElementById("audioOhMyGod").play();
 }
 
 async function btnAlertButton_onClick() {
+    document.getElementById("audioSus").play(); 
     await transitionSection("vwDanger", "vwVideo");
 
     document.getElementById("vidCridimal").play();
