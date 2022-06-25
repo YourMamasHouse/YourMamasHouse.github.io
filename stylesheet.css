@@ -1,3 +1,11 @@
+/* General Styles */
+.hidden {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
 body {
     background-color: black;
     align-content: center;
@@ -5,32 +13,21 @@ body {
     overflow: hidden;
 }
 
-.imgPlayButton{
-    height: 10rem;
-    width: 10rem;
-    filter: invert(100%);
-    border-width: 1rem;
-    border-color: black;
-    border-style: solid;
-    padding: 2rem 4rem;
-    border-radius: 3rem;
-    opacity: 90%;
-    cursor: pointer;
+/* View Styles */
+
+.vwPlayButton {
+    display: inline;
+    opacity: 100;
     transition: opacity 3s;
 }
 
-.imgPlayButton:hover {
-    background-color: rgb(220, 220, 220);
+.vwDanger {
+    display: none;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
-#btnPlayButton {
-    background-color: transparent;
-    transition: all 2s;
-    border: none;
-    margin-top: 28rem;
-}
-
-.vidCridimal {
+.vwVideo {
     display: none;
     opacity: 0;
     height: 70rem;
@@ -38,9 +35,56 @@ body {
     transition: opacity 3s;
 }
 
-.audioScaryAlert {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
-}
+/* Button Styles */
+
+    /* Play Button*/
+
+    .imgPlayButton{
+        height: 10rem;
+        width: 10rem;
+        filter: invert(100%);
+        border-width: 1rem;
+        border-color: black;
+        border-style: solid;
+        padding: 2rem 4rem;
+        border-radius: 3rem;
+        opacity: 90%;
+        cursor: pointer;
+        transition: opacity 3s;
+    }
+
+    .imgPlayButton:hover {
+        background-color: rgb(220, 220, 220);
+    }
+
+    .btnPlayButton {
+        background-color: transparent;
+        transition: all 2s;
+        border: none;
+        margin-top: 28rem;
+    }
+
+    /* Alert Button */
+
+    .imgDanger{
+        height: 20rem;
+        width: 20rem;
+        filter: invert(100%);
+        border-width: 1rem;
+        opacity: 90%;
+        cursor: pointer;
+        transition: opacity 3s;
+    }
+
+    .imgDanger:hover {
+        height: 22rem;
+        width: 22rem;
+        padding-top: -1rem;
+    }
+
+    .btnAlertButton {
+        background-color: transparent;
+        transition: all 2s;
+        border: none;
+        margin-top: 28rem;
+    }

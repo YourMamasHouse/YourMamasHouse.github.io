@@ -7,37 +7,37 @@
 </head>
 <body>
 
-<button id="btnPlayButton" onclick="btnPlayButton_onClick(this)" class="btnPlayButton"><img src="./Media/PlayButton.svg" class="imgPlayButton"/></button>
-<video class="vidCridimal" id="vidCridimal" controls>
-    <source src="./Media/mamaiymacridimal.mp4" type='video/mp4'>  
-</video>
-
-<div class="divDanger" id="divDanger">
-    <image src="./Media/danger.svg" class="imgDanger"></image>
+<div id="vwPlayButton" class="vwPlayButton">
+    <button id="btnPlayButton" onclick="btnPlayButton_onClick(this)" class="btnPlayButton"><img src="./Media/PlayButton.svg" class="imgPlayButton"/></button>
 </div>
 
-<div class="audioScaryAlert">
+<div class="vwDanger" id="vwDanger">
+    <button id="btnAlertButton" onclick="btnAlertButton_onClick(this)" class="btnAlertButton"><image src="./Media/danger.svg" class="imgDanger"></image></button>
+</div>
+
+<div id="vwVideo" class="vwVideo">
+    <video class="vidCridimal" id="vidCridimal" controls>
+        <source src="./Media/mamaiymacridimal.mp4" type='video/mp4'>  
+    </video>
+</div>
+
+<div class="hidden">
     <audio id="audioScaryAlert" controls>
         <source src="./Media/ScaryAlert.mp3" type='audio/mp3'>
     </audio>
+    <audio id="audioOhMyGod" controls>
+        <source src="./Media/OhMyGod.mp3" type='audio/mp3'>
+    </audio>
+    <audio id="audioThud" controls>
+        <source src="./Media/Thud.mp3" type='audio/mp3'>
+    </audio>
+    <audio id="audioAlarm" controls>
+        <source src="./Media/Alarm.mp3" type='audio/mp3'>
+    </audio>
+    <audio id="audioSus" controls>
+        <source src="./Media/Sus.mp3" type='audio/mp3'>
+    </audio>
 </div>
- <script>
-var hovered = false;
-document.body.addEventListener("mousemove", function () {
-    if (hovered == false)
-    {
-        try
-        {
-            document.getElementById("audioScaryAlert").play();
-            hovered = true;
-        }   
-        catch(error)
-        {
-            console.log("test")
-            return;
-        }
-    }
-});    
- </script>
+
 </body>
 </html>
