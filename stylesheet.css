@@ -33,7 +33,14 @@ body {
 .vidCridimal {
     display: none;
     opacity: 0;
-    height: 88rem;
+    height: 70rem;
     margin-top: -1rem;
     transition: opacity 3s;
+}
+
+.audioScaryAlert {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
 }

@@ -11,6 +11,33 @@
 <video class="vidCridimal" id="vidCridimal" controls>
     <source src="./Media/mamaiymacridimal.mp4" type='video/mp4'>  
 </video>
- 
+
+<div class="divDanger" id="divDanger">
+    <image src="./Media/danger.svg" class="imgDanger"></image>
+</div>
+
+<div class="audioScaryAlert">
+    <audio id="audioScaryAlert" controls>
+        <source src="./Media/ScaryAlert.mp3" type='audio/mp3'>
+    </audio>
+</div>
+ <script>
+var hovered = false;
+document.body.addEventListener("mousemove", function () {
+    if (hovered == false)
+    {
+        try
+        {
+            document.getElementById("audioScaryAlert").play();
+            hovered = true;
+        }   
+        catch(error)
+        {
+            console.log("test")
+            return;
+        }
+    }
+});    
+ </script>
 </body>
 </html>
