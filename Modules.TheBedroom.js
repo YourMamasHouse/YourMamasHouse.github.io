@@ -34,6 +34,9 @@ async function btnAlertButton_onClick() {
     document.getElementById("audioSus").play(); 
     await transitionSection("vwDanger", "vwVideo");
 
+    document.getElementsByClassName("walterRight")[0].classList.add("visible");
+    document.getElementsByClassName("walterLeft")[0].classList.add("visible");
+
     document.getElementById("vidCridimal").play();
 }
 

@@ -13,6 +13,34 @@ body {
     overflow: hidden;
 }
 
+.imgWalter {
+    position: absolute;
+    margin-top: 18rem;
+    
+}
+
+.walterLeft {
+    margin-left: -100rem;
+    transition: margin 5s;
+}
+
+.walterRight {
+    margin-left: 100rem;
+    transition: margin 5s;
+}
+
+.walterLeft.visible {
+    margin-left: -40rem;
+    animation-name: spin;
+    animation-duration: 5s;
+}
+
+.walterRight.visible {
+    margin-left: 28rem;
+    animation-name: spinright;
+    animation-duration: 5s;
+}
+
 /* View Styles */
 
 .vwPlayButton {
@@ -88,3 +116,23 @@ body {
         border: none;
         margin-top: 28rem;
     }
+
+/* Animations */
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spinright {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
