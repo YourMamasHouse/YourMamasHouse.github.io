@@ -6,6 +6,10 @@
     position: absolute;
 }
 
+html, body {
+    height:100%;
+} 
+
 body {
     background-color: black;
     align-content: center;
@@ -15,34 +19,34 @@ body {
 
 .imgWalter {
     position: absolute;
-    margin-top: 25rem;
-    height: 30rem;
+    margin-top: 15%;
+    height: 40%;
 }
 
 .walterLeft {
-    margin-left: -100rem;
+    margin-left: -100%;
     transition: margin 5s;
 }
 
 .walterRight {
-    margin-left: 70rem;
+    margin-left: 100%;
     transition: margin 5s;
 }
 
 .walterLeft.visible {
-    margin-left: -90rem;
+    margin-left: -54%;
     animation-name: spin;
     animation-duration: 5s;
 }
 
 .walterRight.visible {
-    margin-left: 28rem;
+    margin-left: 40%;
     animation-name: spinright;
     animation-duration: 5s;
 }
 
 .vidCridimal {
-    height: 90rem;
+    height: 106%;
     margin-top: -1rem;
 }
 
