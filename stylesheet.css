@@ -50,6 +50,22 @@ body {
     margin-top: -1rem;
 }
 
+.imgShirt {
+    width: 15%;
+    display: inline;
+    padding: 2%;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.imgShirt:hover {
+    width: 17%;
+    margin-top: 7%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
 /* View Styles */
 
 .vwPlayButton {
@@ -69,6 +85,12 @@ body {
     opacity: 0;
     height: 70rem;
     margin-top: -1rem;
+    transition: opacity 3s;
+}
+
+.vwShop {
+    display: none;
+    opacity: 0;
     transition: opacity 3s;
 }
 
