@@ -15,8 +15,8 @@ body {
 
 .imgWalter {
     position: absolute;
-    margin-top: 18rem;
-    
+    margin-top: 25rem;
+    height: 30rem;
 }
 
 .walterLeft {
@@ -25,12 +25,12 @@ body {
 }
 
 .walterRight {
-    margin-left: 100rem;
+    margin-left: 70rem;
     transition: margin 5s;
 }
 
 .walterLeft.visible {
-    margin-left: -40rem;
+    margin-left: -90rem;
     animation-name: spin;
     animation-duration: 5s;
 }
@@ -39,6 +39,11 @@ body {
     margin-left: 28rem;
     animation-name: spinright;
     animation-duration: 5s;
+}
+
+.vidCridimal {
+    height: 90rem;
+    margin-top: -1rem;
 }
 
 /* View Styles */
