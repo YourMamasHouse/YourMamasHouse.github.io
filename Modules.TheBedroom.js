@@ -51,7 +51,7 @@ function setUpShop()
     document.getElementById("imgWhyCridimal").addEventListener("click", () => openTab("Why-you-a-cridimal-by-ghargrove15/114846598.WFLAH"));
     document.getElementById("imgCridimal").addEventListener("click", () => openTab("Cridimal-by-ghargrove15/114846822.WFLAH"));
     document.getElementById("imgWalterShirt").addEventListener("click", () => openTab("Walter-Cridimal-by-ghargrove15/114846382.WFLAH"));
-    document.getElementById("imgKanye").addEventListener("click", () => openTab("Kanye-by-ghargrove15/114847213.WFLAH"));
+    document.getElementById("imgKanye").addEventListener("click", () => openTab("https://www.redbubble.com/i/t-shirt/Kawn-Yay-Fornite-by-ghargrove15/115395017.WFLAH"));
 }
 
 function openTab(itemName)
